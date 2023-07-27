@@ -6,4 +6,5 @@ COPY . .
 
 RUN apt-get update
 
-CMD ["python", "main.py", "10"]
+ENTRYPOINT ["python", "main.py"]
+CMD ["-h"]
